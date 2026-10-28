@@ -12,6 +12,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^7.4.2"
+    "@popperjs/core": "^2.11.8",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.4.2",
+    "swiper": "^14.3.0"
   }
 }
