@@ -6,36 +6,32 @@
   text-decoration: none;
   box-sizing: border-box;
 }
-
+html,
+body {
+  overflow-x: clip;
+  scroll-behavior: smooth;
+  margin: 0 auto;
+}
 body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-  position: relative;
   line-height: 25px;
+  max-width: 1280px;
 }
-main {
-  width: 100%;
-}
-html,
-body {
-  margin: 0;
-  width: 100%;
-  max-width: 100%;
-  overflow-x: clip;
-  scroll-behavior: smooth;
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 main {
   min-width: 0;
   width: 100%;
-  max-width: 100%;
-}
-body::-webkit-scrollbar {
-  display: none;
+  position: relative;
 }
 p {
   color: #5c5c5c;
+  margin: 10px 0;
 }
 a {
   color: black;
@@ -45,13 +41,14 @@ hr {
   height: 2px;
   width: 100px;
   border: none;
-  margin: 0 auto;
+  margin: 0 auto ;
 }
 header {
   position: fixed;
   top: 0;
-  left: 0;
+  left:0;
   width: 100%;
+  margin: 0 auto;
   z-index: 1000;
   background-color: transparent;
   transition:
@@ -65,7 +62,9 @@ header.scrolled {
 nav {
   display: grid;
   grid-template-columns: auto 1fr;
-  padding: 20px;
+  padding:0 20px;
+  margin: 0 auto;
+  width: 100%;
 }
 section {
   width: 100%;
@@ -213,7 +212,7 @@ section {
   align-items: center;
   gap: 30px;
   flex-direction: column;
-  width: 600px;
+  max-width: 600px;
   margin: 0 auto;
   text-align: center;
   padding: 80px 0;
@@ -223,7 +222,7 @@ section {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 20px;
-  width: 85%;
+  max-width: 75%;
   margin: 0 auto;
 }
 
@@ -235,8 +234,9 @@ section {
   flex-grow: 1;
 }
 .horizontal-card-container {
-  width: 85%;
-  margin: 0 auto;
+  width: 900px;
+  margin: 60px auto;
+  padding: 20px;
 }
 
 .horizontal-card {
@@ -294,22 +294,21 @@ section {
 .horizontal-card .long {
   width: 100%;
 }
-  .horizontal-card .icon {
-    top: 15%;
-    width: 20%;
-    left: -5%;
-      z-index: 9;
-      position: absolute;
-  }
+.horizontal-card .icon {
+  top: 15%;
+  width: 20%;
+  left: -5%;
+  z-index: 9;
+  position: absolute;
+}
 
-  .horizontal-card-container > :nth-child(2) .icon {
-    top: 15%;
-    width: 20%;
-    left: 87%;
-      z-index: 9;
-      position: absolute;
-  }
-
+.horizontal-card-container > :nth-child(2) .icon {
+  top: 15%;
+  width: 20%;
+  left: 87%;
+  z-index: 9;
+  position: absolute;
+}
 
 .card img {
   width: 100%;
@@ -326,10 +325,14 @@ section {
 .more-info {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 70px;
+    width: 100%;
+  padding: 60px 20px;
+  margin: 20px  0;
+ gap: 80px;
 }
 .more-info {
   background-image: url("/images/pattern-5-1.jpg");
+  width: 100%;
   object-fit: contain;
 }
 .more-info .left,
@@ -361,13 +364,12 @@ section {
 }
 
 .partner {
-  width: 100%;
-  max-width: 100%;
-  min-width: 0;
+  max-width: 1200px;
   padding: 20px 0;
   text-align: center;
   overflow: hidden;
-  padding: 50px;
+  padding: 50px 0;
+  margin: 0 auto;
 }
 
 .partner h1 {
@@ -375,21 +377,21 @@ section {
 }
 
 .partner .partner-container {
-  width: 100%;
   max-width: 100%;
   overflow: hidden;
+  margin: 50px 0;
 }
 
 .partner .partner-track {
   display: flex;
   width: max-content;
-  gap: 20px;
+  gap: 30px;
   animation: slide 40s linear infinite;
 }
 
 .partner .partner-slide {
   flex: 0 0 200px;
-  height: 100px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -413,7 +415,9 @@ section {
 }
 
 .jump-start {
-  padding: 30px;
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 100px;
 }
 
 .jump-start-inner {
@@ -422,6 +426,8 @@ section {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .jump-start-inner .btn-container {
@@ -797,7 +803,6 @@ footer i {
     justify-content: center;
   }
   .contact-form {
-    
     padding: 22px 18px;
     gap: 22px;
   }
@@ -880,7 +885,6 @@ footer i {
   .horizontal-card .img-container-inner {
     width: 90%;
   }
-
 
   .jump-start-inner h1 {
     font-size: 22px;
