@@ -62,7 +62,7 @@ header.scrolled {
 nav {
   display: grid;
   grid-template-columns: auto 1fr;
-  padding:0 20px;
+  padding:10px 20px;
   margin: 0 auto;
   width: 100%;
 }
@@ -75,7 +75,7 @@ section {
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 .links a {
   font-weight: bold;
@@ -83,10 +83,14 @@ section {
 .links a:hover {
   color: #006838;
 }
+.links .btn:hover {
+  background-color: #006838;
+  color: white;
+}
 .btn {
   border: 2px solid #006838;
   padding: 10px 30px;
-  border-radius: 20px;
+  border-radius: 35px;
 }
 .btn:hover {
   background-color: #006838;
