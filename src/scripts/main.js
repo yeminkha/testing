@@ -24,9 +24,6 @@ const observer = new IntersectionObserver(
         element.classList.toggle("active", entry.isIntersecting);
       }
 
-            if (element.classList.contains("partner")) {
-        element.classList.toggle("active", entry.isIntersecting);
-      }
     });
   },
   {
@@ -38,32 +35,6 @@ document.querySelectorAll(".slideUp, .popUp").forEach((element) => {
   observer.observe(element);
 });
 
-const slider = document.querySelector(".slider");
-const sliderText1 = slider?.querySelector(".side-1-text");
-const sliderText3 = slider?.querySelector(".side-3-text");
-
-function runSliderAnimation() {
-  sliderText1?.classList.remove("slideUpShow");
-  sliderText3?.classList.remove("slideLeftShow");
-
-  sliderText1?.classList.add("slideUpShow");
-
-  setTimeout(() => {
-    sliderText3?.classList.add("slideLeftShow");
-  }, 13000);
-
-  setTimeout(() => {
-    sliderText1?.classList.remove("slideUpShow");
-  }, 10000);
-
-  setTimeout(() => {
-    runSliderAnimation();
-  }, 20000);
-}
-
-if (slider) {
-  runSliderAnimation();
-}
 
 const menu = document.querySelector('.menu');
 const menuLinks = document.querySelector('.menuLinks');
