@@ -540,6 +540,10 @@ header .menuLinks {
   color: #006838;
   font-size: 15px;
 }
+.jump-start .btn:hover {
+  color:white;
+  font-size: 15px;
+}
 
 .popUp {
   opacity: 0;
