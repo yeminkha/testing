@@ -273,6 +273,9 @@ header .menuLinks {
   max-width: 90%;
   margin: 30px auto;
   padding: 20px;
+  display: flex;
+  gap:30px;
+  flex-direction: column;
 }
 
 .horizontal-card {
@@ -748,9 +751,15 @@ footer i {
   .horizontal-card .text-container {
     width: 100%;
   }
-  .horizontal-card .img-container-inner {
+  .horizontal-card-container .img-container {
     width: 85%;
-    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+    .horizontal-card-container > :nth-child(2) .img-container {
+    width: 85%;
+    display: flex;
+    justify-content: flex-start;
   }
 
   .horizontal-card .text-container {
