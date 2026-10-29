@@ -125,7 +125,7 @@ header .menuLinks {
   overflow: hidden;
 }
 
-.slider .container{
+.slider .container {
   max-width: 1280px;
 }
 
@@ -196,11 +196,11 @@ header .menuLinks {
   font-weight: 0;
   font-size: 30px;
 }
-.slide-3 .container{
+.slide-3 .container {
   margin: 0 auto;
   max-width: 1280px;
   width: 100%;
-  height:100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -223,19 +223,15 @@ header .menuLinks {
     transform: translateX(100%);
   }
 
-
   70% {
     opacity: 1;
     transform: translateX(0);
   }
 
-
   100% {
     opacity: 1;
     transform: translateX(0);
   }
-
-
 }
 .side-3-text .text {
   font-size: 25px;
@@ -426,7 +422,7 @@ header .menuLinks {
   padding: 60px 20px;
   margin: 20px 0;
   gap: 80px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 .more-info {
   background-image: url("/images/pattern-5-1.jpg");
@@ -541,7 +537,7 @@ header .menuLinks {
   font-size: 15px;
 }
 .jump-start .btn:hover {
-  color:white;
+  color: white;
   font-size: 15px;
 }
 
@@ -586,10 +582,10 @@ header .menuLinks {
   justify-content: flex-end;
   align-items: center;
   padding: 30px;
-  max-width:100%;
+  max-width: 100%;
 }
 
-.contact-form {
+.contact-us .contact-form {
   width: 100%;
   max-width: 400px;
   min-width: 0;
@@ -692,13 +688,13 @@ footer i {
 
 /* responsive */
 
-@media (max-width: 700px) {
+@media (max-width: 960px) {
   header {
     position: sticky;
     background-color: white;
   }
   nav img {
-    width: 80px;
+    width: 90px;
   }
   nav .links {
     display: none;
@@ -720,39 +716,37 @@ footer i {
     padding: 10px;
   }
   .carousel-slide {
-    height: 310px;
-  }
-  .carousel-slide .btn {
-    padding: 3px 10px;
-    font-size: 11px;
+    height: 410px;
   }
 
+  .carousel-slide .btn {
+    font-size: 15px;
+    padding: 8px 25px;
+  }
   .side-1-text {
-    max-width: 100%;
-    gap: 22px;
+    gap: 20px;
   }
 
   .side-1-text .text {
-    font-size: 22px;
+    font-size: 30px;
     line-height: 1.2;
   }
   .side-1-text .text span {
     margin-top: 8px;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .side-3-text {
     padding: 10px;
-    gap: 14px;
+    gap: 0px;
   }
 
   .side-3-text .text {
-    font-size: 15px;
+    font-size: 23px;
   }
 
   .slide-3 .btn {
-    margin-top: 15px;
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .what_we_do {
@@ -770,77 +764,61 @@ footer i {
     font-size: 13px;
     line-height: 1.7;
   }
-  .card-container {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    width: 90%;
-    gap: 28px 18px;
+
+  .partner .partner-slide {
+    flex-basis: 140px;
+    height: 35px;
   }
 
-  .card {
-    gap: 12px;
-    min-width: 0;
+
+}
+
+@media (max-width: 768px) {
+  nav img{
+    width: 80px;
+  }
+  .carousel-slide {
+    height: 310px;
+  }
+  .carousel-slide .btn {
+    padding: 0px 15px;
+    font-size: 11px;
   }
 
-  .card h3 {
-    font-size: 16px;
-    line-height: 1.35;
+  .side-1-text {
+    gap: 18px;
   }
 
-  .card p {
-    font-size: 14px;
-    line-height: 1.6;
+  .side-1-text .text {
+    font-size: 25px;
+    line-height: 1.2;
   }
-  .card .btn {
-    padding: 8px 12px;
-    font-size: 12px;
-    text-align: center;
-  }
-
-  .horizontal-card-container {
-    width: 90%;
-    margin-top: 50px;
+  .side-1-text .text span {
+    margin-top: 8px;
+    font-size: 18px;
   }
 
-  .horizontal-card,
-  .horizontal-card-container > :nth-child(2) {
-    flex-direction: column;
-    gap: 28px;
-    margin: 35px auto;
+  .side-3-text {
+    padding: 10px;
   }
 
-  .horizontal-card .img-container,
-  .horizontal-card .text-container {
-    width: 100%;
-  }
-  .horizontal-card-container .img-container {
-    width: 85%;
-    display: flex;
-    justify-content: flex-end;
-  }
-  .horizontal-card-container > :nth-child(2) .img-container {
-    width: 85%;
-    display: flex;
-    justify-content: flex-start;
+  .side-3-text .text {
+    font-size: 15px;
   }
 
-  .horizontal-card .text-container {
-    justify-content: flex-start;
+  .slide-3 .btn {
+    margin-top: 0px;
+    font-size: 11px;
   }
 
-  .horizontal-card .text-container .text-container-inner {
-    width: 100%;
-  }
 
-  .horizontal-card h3 {
-    margin-bottom: 10px;
-  }
-  .more-info .container{
+  .more-info .container {
     grid-template-columns: 1fr;
     padding: 45px 20px;
     gap: 25px;
   }
-  .more-info{
-        background-size: cover;
+  .more-info {
+    background-size: cover;
     background-position: center;
   }
 
@@ -871,8 +849,7 @@ footer i {
   }
 
   .partner .partner-slide {
-    flex-basis: 140px;
-    height: 75px;
+    height: 25px;
   }
 
   .partner .partner-track {
@@ -965,22 +942,82 @@ footer i {
     gap: 6px;
     font-size: 15px;
   }
+  .card-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 90%;
+    gap: 28px 18px;
+  }
+
+  .card {
+    gap: 12px;
+    min-width: 0;
+  }
+
+  .card h3 {
+    font-size: 16px;
+    line-height: 1.35;
+  }
+
+  .card p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .card .btn {
+    padding: 8px 12px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .horizontal-card-container {
+    width: 90%;
+    margin-top: 50px;
+  }
+
+  .horizontal-card,
+  .horizontal-card-container > :nth-child(2) {
+    flex-direction: column;
+    gap: 28px;
+    margin: 35px auto;
+  }
+
+  .horizontal-card .img-container,
+  .horizontal-card .text-container {
+    width: 100%;
+  }
+  .horizontal-card-container .img-container {
+    width: 85%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .horizontal-card-container > :nth-child(2) .img-container {
+    width: 85%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .horizontal-card .text-container {
+    justify-content: flex-start;
+  }
+
+  .horizontal-card .text-container .text-container-inner {
+    width: 100%;
+  }
+
+  .horizontal-card h3 {
+    margin-bottom: 10px;
+  }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .carousel-slide {
     height: 170px;
   }
 
   .carousel-slide .btn {
-    padding: 0px 10px;
+    padding: 0px 15px;
     font-size: 8px;
   }
 
-  .side-1-text {
-    max-width: 100%;
-    gap: 22px;
-  }
 
   .side-1-text .text {
     font-size: 15px;

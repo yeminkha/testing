@@ -1,0 +1,275 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+}
+.dice {
+  background-color: white;
+}
+
+.dice .img-container {
+  width: 100%;
+  background-image: url("/images/dice/MicrosoftTeams-image-10.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 560px;
+}
+
+.dice .overText {
+  position: relative;
+  max-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.dice .overText .text-container {
+  position: absolute;
+  top: 35%;
+  left: 17%;
+  line-height: 35px;
+}
+
+.dice .overText .text-container .assessment {
+  padding-left: 50%;
+}
+
+.dice .overText h1 {
+  color: #707070;
+  font-size: 30px;
+  padding-left: 5px;
+}
+
+.dice .overText p {
+  color: #3dab72;
+  font-size: 22px;
+}
+
+/* Main Layout */
+.dice .main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "form text"
+    "form video";
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Left Form Section */
+.dice .main-container .form-container {
+  grid-area: form;
+  color: white;
+}
+
+.dice .main-container .contact-form {
+  max-width: 100%;
+  border-radius: 0;
+  padding: 40px 50px 0px;
+  background-color: #004d25;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dice .form-container h2 {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.dice .form-container .form-group {
+  margin-bottom: 0px;
+}
+
+.dice .form-container label {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.dice .form-container input {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  background-color: transparent;
+  color: white;
+  font-size: 17px;
+  outline: none;
+}
+
+.dice .form-container input:focus {
+  border-color: #3dab72;
+}
+
+.dice .form-container button {
+  margin-top: 18px;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #00683c;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 150px;
+}
+
+.dice .form-container button:hover {
+  background-color: #00844c;
+}
+
+.dice .form-container .privacy-text {
+  margin-top: -15px;
+  font-size: 13px;
+  font-weight: 700;
+  color: white;
+}
+
+/* Right Text Section */
+.dice .main-container .text-container {
+  grid-area: text;
+  padding: 0 22px;
+  min-width: 0;
+  margin-top: 20px;
+}
+
+.dice .main-container .text-container h1 {
+  color: #181818;
+  font-size: 28px;
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.dice .main-container .text-container p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* Right Video Section */
+.dice .main-container .video-container {
+  grid-area: video;
+  padding: 0 22px;
+  min-width: 0;
+}
+
+.dice .video-container iframe {
+  display: block;
+  width: 80%;
+  max-width: 480px;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
+footer {
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (max-width: 900px) {
+  .dice .img-container {
+    height: 430px;
+  }
+  .dice .overText .text-container {
+    line-height: 20px;
+  }
+
+  .dice .overText h1 {
+    font-size: 22px;
+    padding-left: 0px;
+  }
+
+  .dice .overText p {
+    font-size: 15px;
+  }
+
+  .dice .main-container {
+    padding: 0 20px;
+  }
+
+  .dice .form-container {
+    padding: 0px;
+  }
+
+  .dice .form-container h2 {
+    font-size: 17px;
+    line-height: 1.2;
+  }
+
+  .dice .main-container .text-container {
+    padding: 0px 3%;
+  }
+
+  .dice .main-container .text-container h1 {
+    font-size: 25px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+
+  .dice .main-container .text-container p {
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 28px;
+  }
+
+  .dice .main-container .video-container {
+    padding: 0 3%;
+  }
+}
+
+@media (max-width: 760px) {
+  .dice .main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "form "
+      "text " "video";
+    width: 100%;
+  }
+  .dice .img-container {
+    height: 370px;
+  }
+  .dice .overText .text-container {
+    line-height: 15px;
+  }
+
+  .dice .overText h1 {
+    font-size: 18px;
+    padding-left: 0px;
+  }
+
+  .dice .overText p {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .dice .img-container {
+    height: 230px;
+  }
+
+  .dice .overText .text-container {
+    line-height: 5px;
+  }
+
+  .dice .overText h1 {
+    font-size: 12px;
+  }
+
+  .dice .overText p {
+    font-size: 8px;
+  }
+
+}
