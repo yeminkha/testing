@@ -255,6 +255,17 @@ footer {
 
 }
 
+@media (max-width: 690px) {
+
+
+  .dice .overText .text-container {
+    left: 12%;
+  }
+
+
+
+}
+
 @media (max-width: 480px) {
   .dice .img-container {
     height: 230px;
@@ -271,5 +282,16 @@ footer {
   .dice .overText p {
     font-size: 8px;
   }
+
+}
+
+@media (max-width: 400px) {
+
+
+  .dice .overText .text-container {
+    left: 10%;
+  }
+
+
 
 }
